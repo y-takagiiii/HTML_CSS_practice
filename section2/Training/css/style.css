@@ -40,3 +40,21 @@
   align-items: center;
   z-index: 5;
 }
+
+.menu-btn span, .menu-btn span::before, .menu-btn span::after {
+  content: "";
+  display: block; /* 改行されるようブロック要素にする */
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color : #fff;
+  position: absolute;
+}
+
+.menu-btn span::before {
+  bottom: 8px;
+}
+
+.menu-btn span::after {
+  top: 8px;
+}
