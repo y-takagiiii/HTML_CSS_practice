@@ -10,11 +10,20 @@
   left: 0; /* 左上に固定 */
   z-index: 1; /* どの要素よりも前に配置する */
   background-color: rgb(0, 0, 0, 0.5);
+  display: flex; /* h1とハンバーガーメニューを横並びにする */
 }
 
 .header h1 {
   color: #fff;
+  width: 100%;
   font-size: 25px;
-  padding: 12px 0 12px 30px;
+  padding: 10px 0 10px 10px;
   font-family: 'Train One', cursive;
+}
+
+.test {
+  width: 100%;
+}
+
+.hamburger-menu {
 }
