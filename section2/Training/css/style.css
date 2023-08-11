@@ -26,4 +26,17 @@
 }
 
 .hamburger-menu {
+  position: relative;
+}
+
+.menu-button {
+  position: absolute; /* relativeとセットで使用・定位置に固定する */
+  top: 0;
+  right: 10;
+  height: 35px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
 }
