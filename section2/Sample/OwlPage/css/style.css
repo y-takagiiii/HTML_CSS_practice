@@ -1,0 +1,214 @@
+/*iPhoneおよび共通設定*/
+body {
+    font-family: "Zen Kaku GVothic New", sans-self;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(0,0,0,0.5);
+    display: flex;
+}
+.header h1 {
+    color: #fff;
+    font-size: 25px;
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    font-family: 'Train One', cursive;
+}
+
+.hamburger-menu {
+    position: relative;
+}
+.menu-btn {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    height: 35px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+.menu-btn span, .menu-btn span::before, .menu-btn span::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #fff;
+    position: absolute;
+}
+.menu-btn span::before {
+    bottom: 8px;
+}
+.menu-btn span::after {
+    top: 8px;
+}
+#menu-btn-check:checked + .menu-btn span {
+    background-color: rgb(255,255,255,0);
+}
+#menu-btn-check:checked + .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked + .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+#menu-btn-check {
+    display: none;
+}
+
+.menu-content {
+    width: 80%;
+    height: 60%;
+    margin-left: 20%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 4;
+    background-color: #20b2aa;
+}
+
+.menu-content ul {
+    padding-top: 50px;
+}
+.menu-content ul li {
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    padding: 9px 0 10px 20px;
+}
+.menu-content ul li a:hover {
+    background-color: #000;
+}
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;
+}
+
+.main {
+    margin-top: 100px;
+}
+.main-h2 {
+    text-align: center;
+    font-family: "Zen Antique", self;
+    font-size: 40px;
+    margin-top: 40px;
+}
+.main-p1 {
+    text-align: center;
+    font-size: 25px;
+    line-height: 35px;
+    margin-top: 40px;
+}
+.main-contents {
+    margin-top: 40px;
+}
+.main-text {
+    margin: 0 40px;
+    margin-top: 40px;
+}
+.main-text .p2 {
+    font-size: 17px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 7px;
+    line-height: 21px;
+}
+.main-text .p3 {
+    line-height: 21px;
+    margin-top: 40px;
+}
+.main-text .button-back {
+    width: 60px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-top: 10px;
+    padding: 2px;
+}
+
+
+.slides {
+    display: flex;
+    overflow-x: hidden;
+}
+.slides div {
+    display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  width: 100%;
+}
+.slides img {
+    width: 100%;
+}
+.slides-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.slides-button a {
+    width: 19%;
+}
+.slides-button a img {
+    width: 100%;
+}
+
+.SNS {
+    width: 100%;
+}
+.SNS .SNS-logo {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #000;
+    padding-top: 10px;
+    margin-top: 40px;
+}
+.SNS .SNS-logo img {
+    width: 13%;
+}
+
+
+footer {
+    background-color: #ccc;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+footer .footer-title {
+    padding: 5px 0 5px 40px;
+    background-color: #000;
+    font-size: 18px;
+    color: #fff;
+}
+footer .footer-text {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    margin-top: 10px;
+    gap: 2px 0;
+}
+.footer-text p {
+    grid-column: 2;
+    font-size: 15px;
+    }
+.footer-text p a {
+    text-decoration: none;
+    color: #000;
+}
