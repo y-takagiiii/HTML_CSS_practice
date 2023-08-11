@@ -1,3 +1,7 @@
+body {
+  font-family: "Zen Kaku GVothic New", sans-serif;
+}
+
 .container {
   width: 100%;
   height: 100%;
@@ -111,4 +115,20 @@
 /* ~や+は関節セレクタ */
 #menu-btn-check:checked ~ .menu-content {
   left: 0;
+}
+
+.main {
+  margin-top: 100px;
+}
+
+.main-h2 {
+  text-align: center;
+  font-family: "Zen Antique", self;
+  font-size: 40px;
+}
+
+.main-p1 {
+  text-align: center;
+  font-size: 25px;
+  line-height: 35px;
 }
