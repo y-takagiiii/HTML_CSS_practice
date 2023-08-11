@@ -11,3 +11,10 @@
   z-index: 1; /* どの要素よりも前に配置する */
   background-color: rgb(0, 0, 0, 0.5);
 }
+
+.header h1 {
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 0 12px 30px;
+  font-family: 'Train One', cursive;
+}
