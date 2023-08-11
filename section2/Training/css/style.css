@@ -29,9 +29,9 @@
   position: relative;
 }
 
-.menu-button {
+.menu-btn {
   position: absolute; /* relativeとセットで使用・定位置に固定する */
-  top: 0;
+  top: 3px;
   right: 10;
   height: 35px;
   width: 40px;
@@ -58,3 +58,21 @@
 .menu-btn span::after {
   top: 8px;
 }
+
+#menu-btn-check:checked + .menu-btn span {
+  background-color: rgba(255, 255, 255, 0);
+} /* クリックされたら中央の線を透明にする */
+
+#menu-btn-check:checked + .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+} /* クリックされたら位置をリセットして45度傾ける */
+
+#menu-btn-check:checked + .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+} /* クリックされたら位置をリセットして-45度傾ける */
+
+#menu-btn-check {
+  display: none;
+} /* チェックボックスを非表示にする */
