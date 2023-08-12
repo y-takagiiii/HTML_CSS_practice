@@ -162,3 +162,33 @@ body {
   margin-top: 10px;
   padding: 2px;
 }
+
+.slides {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.slides div {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  width: 100%;
+}
+
+.slides img {
+  width: 100%;
+}
+
+.slides-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.slides-button a {
+  width: 19%;
+}
+
+.slides-button a img {
+  width: 100%;
+}
