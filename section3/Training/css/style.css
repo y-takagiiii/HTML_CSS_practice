@@ -210,3 +210,20 @@ body {
 .SNS .SNS-logo img {
   width: 13%;
 }
+
+footer {
+  width: 100%;
+  margin-top: 40px;
+}
+
+h3 {
+  padding: 5px 0 5px 40px;
+  background-color: #ccc;
+  font-size: 18px;
+  color: #fff;
+}
+
+footer .footer-text {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
