@@ -192,3 +192,21 @@ body {
 .slides-button a img {
   width: 100%;
 }
+
+.SNS {
+  width: 100%;
+}
+
+.SNS .SNS-logo {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #000;
+  padding-top: 10px;
+  margin-top: 40px;
+}
+
+.SNS .SNS-logo img {
+  width: 13%;
+}
